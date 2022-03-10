@@ -16,7 +16,7 @@ const SingleProductDetails = ({ onProductOrderClick, ...props }) => {
         <div className="w-full py-4  lg:w-2/3 lg:py-16 lg:pl-8">
           <div className="mb-2 flex items-start justify-between  text-xl lg:text-2xl">
             <div className="w-3/4 uppercase text-gray-900">{title}</div>
-            <div className="w-24 lg:w-36 ">
+            <div className="mx-1 w-24 lg:w-36 ">
               <RatingStars value={rate} />
             </div>
           </div>
