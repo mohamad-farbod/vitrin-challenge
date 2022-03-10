@@ -1,7 +1,21 @@
+import ReactStars from 'react-rating-stars-component'
+
 import React from 'react'
 
-const Ratingstars = () => {
-  return <div>Ratingstars</div>
+const RatingStars = ({ value }) => {
+  const starSettings = {
+    size: '32px',
+    value,
+    color2: '#ff0000',
+    count: 5,
+    edit: false,
+    isHalf: true,
+  }
+  return (
+    <div className="">
+      <ReactStars {...starSettings} />
+    </div>
+  )
 }
 
-export default Ratingstars
+export default RatingStars

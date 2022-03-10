@@ -8,9 +8,9 @@ const SingleProductDetails = ({ onProductOrderClick, ...props }) => {
   const { category, description, image, price, title, rating, id } = product
   const rate = rating.rate
   return (
-    <div className="h-88 m-4 mx-36  rounded-lg bg-gray-300 px-8 py-4  lg:py-24 lg:px-24 ">
+    <div className="h-88 m-4 rounded-lg  bg-gray-300 px-8 py-4 md:mx-12 lg:mx-36  lg:py-24 lg:px-24 ">
       <div className=" flex-col items-center justify-center rounded-lg bg-white px-4 md:flex-row  lg:flex lg:px-12 ">
-        <div className="my-auto flex  w-full items-center justify-center border-r p-2 lg:w-1/3 lg:border-black">
+        <div className="my-auto flex  w-full items-center justify-center p-2 lg:w-1/3 lg:border-r lg:border-black">
           <Image src={image} alt={title} width={300} height={500} />
         </div>
         <div className="w-full py-4  lg:w-2/3 lg:py-16 lg:pl-8">
