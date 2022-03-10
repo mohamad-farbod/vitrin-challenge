@@ -1,7 +1,13 @@
 import React from 'react'
+import Header from '../Header/Header'
 
-const Layout = () => {
-  return <div>Layout</div>
+const Layout = (props) => {
+  return (
+    <>
+      <Header />
+      <main>{props.children}</main>
+    </>
+  )
 }
 
 export default Layout
